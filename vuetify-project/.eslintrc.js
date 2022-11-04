@@ -28,10 +28,7 @@ module.exports = {
 		withDefaults: 'readonly'
 	},
 	rules: {
-		'no-console':
-			process.env.NODE_ENV === 'production'
-				? ['error', { allow: ['error', 'warn'] }]
-				: 'off',
+		'no-console': process.env.NODE_ENV === 'production' ? ['error', { allow: ['error', 'warn'] }] : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
 		// indent: ['error', 4]
 		'prettier/prettier': ['off', 'intent'],
@@ -39,18 +36,17 @@ module.exports = {
 			1, // 'warn
 			{
 				singleline: 'beside',
-				multiline: 'below'
+				multiline: 'beside'
 			}
 		],
 		'vue/max-attributes-per-line': [
-			2, // 'error'
+			1, // 'error'
 			{
 				singleline: {
 					max: 10
 				},
 				multiline: {
-					max: 1,
-					allowFirstLine: true
+					max: 5
 				}
 			}
 		]

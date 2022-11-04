@@ -3,9 +3,9 @@
         <v-responsive class="d-flex align-center text-center fill-height">
             <v-img contain height="300" src="src/assets/logo.svg" />
 
-            <div class="text-body-2 font-weight-light mb-n1">Welcome to 5555</div>
+            <div class="text-body-2 font-weight-light mb-n1 font-error2">Welcome to 5555</div>
 
-            <h1 class="text-h2 font-weight-bold">Vuetify</h1>
+            <h1 class="text-h2 font-weight-bold elevation-5 font-error1">Vuetify</h1>
 
             <div class="py-14" />
 
@@ -41,3 +41,17 @@
 <script setup lang="ts">
 //
 </script>
+
+<style lang="scss" scoped>
+body {
+    color: "#333";
+}
+
+.font-error1 {
+    color: red;
+}
+
+.font-error2 {
+    color: blue;
+}
+</style>
