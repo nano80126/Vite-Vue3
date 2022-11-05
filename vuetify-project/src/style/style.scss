@@ -1,17 +1,21 @@
-$body-font-family: "consolas", "微軟正黑體";
-$title-font: "consolas", "微軟正黑體";
+$body-font-family: 'consolas', '微軟正黑體';
+$title-font: 'consolas', '微軟正黑體';
 
 .v-application {
-    .title,
-    .subtitle-1,
-    .subtitle-2 {
-        font-family: $title-font, sans-serif !important;
-    }
+	.title,
+	.subtitle-1,
+	.subtitle-2 {
+		font-family: $title-font, sans-serif !important;
+	}
 }
 
 html,
 body {
-    font-size: 16px;
-    font-family: consolas, "微軟正黑體", Helvetica, Arial, "LiHei Pro", "黑體-繁", sans-serif;
-    user-select: none;
+	top: 0;
+	bottom: 0;
+	width: 20;
+	height: 20;
+	font-size: 16px;
+	font-family: consolas, '微軟正黑體', Helvetica, Arial, 'LiHei Pro', '黑體-繁', sans-serif;
+	user-select: none;
 }
