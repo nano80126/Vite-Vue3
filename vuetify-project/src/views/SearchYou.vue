@@ -6,8 +6,11 @@
 				{{ store.state.count }}
 			</v-col>
 
-			<v-col cols="4" class="text-center bg-success">
-				<v-btn @click="addHander">++</v-btn>
+			<v-col cols="4" class="text-center">
+				<v-btn text class="mx-3 rounded-xl" color="success" @click="addHander">
+					<v-icon class="color-white" icon="mdi-account" />
+					123
+				</v-btn>
 
 				<v-btn @click="ChangeHander">+10</v-btn>
 			</v-col>
@@ -31,6 +34,8 @@ const ChangeHander = () => {
 
 <style scoped lang="scss">
 .test {
+	width: 50;
+	height: 80;
 	color: #555;
 }
 </style>
