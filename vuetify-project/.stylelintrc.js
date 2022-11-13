@@ -6,7 +6,7 @@ module.exports = {
 	overrides: [
 		{
 			extends: ['stylelint-config-recommended-vue/scss', 'stylelint-config-html/vue'],
-			files: ['*.vue', '**/*.vue'], // css 相关文件由 postcss-scss 处理
+			files: ['*.vue', '**/*.vue', '*.html'], // css 相关文件由 postcss-scss 处理
 			customSyntax: 'postcss-html',
 			rules: {
 				// 'selector-pseudo-element-no-unknown': [

@@ -1,11 +1,11 @@
 <template>
 	<v-container class="fill-height">
 		<v-responsive class="d-flex align-center text-center fill-height">
-			<v-img contain height="300" src="src/assets/logo.svg" />
+			<v-img contain height="300" :src="svgUrl" />
 
-			<div class="text-body-2 font-weight-light mb-n1 font-error2">Welcome to 777</div>
+			<div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
 
-			<h1 class="text-h2 font-weight-bold elevation-5 font-error1">Vuetify</h1>
+			<h1 class="text-h2 font-weight-bold text-custom-primary">Vuetify 555</h1>
 
 			<div class="py-14" />
 
@@ -44,19 +44,12 @@
 </template>
 
 <script setup lang="ts">
+const svgUrl = new URL('@/assets/logo.svg', import.meta.url).href;
 //
 </script>
 
 <style scoped lang="scss">
-body {
-	color: '#333';
-}
-
-.font-error1 {
-	color: red;
-}
-
-.font-error2 {
+.text-custom-primary {
 	color: blue;
 }
 </style>

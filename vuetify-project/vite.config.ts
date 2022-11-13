@@ -2,6 +2,7 @@
 import vue from '@vitejs/plugin-vue';
 import vuetify from 'vite-plugin-vuetify';
 import eslintPlugin from 'vite-plugin-eslint';
+import { fileURLToPath } from 'url';
 
 // Utilities
 import { defineConfig } from 'vite';
@@ -22,8 +23,8 @@ export default defineConfig({
 	define: { 'process.env': {} },
 	resolve: {
 		alias: {
-			// "@": fileURLToPath(new URL("./src", import.meta.url))
-			'@': '/src'
+			'@': fileURLToPath(new URL('./src', import.meta.url))
+			// '@': resolve(__dirname, 'src'),
 		},
 		extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue']
 	},
